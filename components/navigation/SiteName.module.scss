@@ -1,0 +1,15 @@
+@use '../../app/sass/variables';
+
+// TODO sitename link color
+
+.siteNameLink {
+  align-self: center;
+  color: black;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.siteName {
+  font-family: variables.$fontScript;
+  font-size: variables.$fontBodySize-xxxlarge;
+}

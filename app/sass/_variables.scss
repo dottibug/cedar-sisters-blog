@@ -1,0 +1,34 @@
+// FONTS
+$fontBody: 'Inter', sans-serif;
+$fontHeading: 'Cormorant Garamond', serif;
+$fontScript: 'lindsey-signature', cursive;
+
+// FONT SIZES
+$fontBodySize-xxsmall: 1.2rem;
+$fontBodySize-xsmall: 1.4rem;
+$fontBodySize-small: 1.6rem;
+$fontBodySize-medium: 1.8rem;
+$fontBodySize-large: 2rem;
+$fontBodySize-xlarge: 2.4rem;
+$fontBodySize-xxlarge: 2.8rem;
+$fontBodySize-xxxlarge: 3.6rem;
+// bodySize-xxsmall 1.2 (breadcrumbs, date on image, tags, journal suggestion date)
+// bodySize-xsmall 1.4 (journal stats, journal author/readtime, journal suggestions section heading, richtext heading6, richtext blockquote, journal suggestion title)
+// bodySize-small 1.6 (guest author title, journal body richtext, richtext heading5, guest author bio)
+// bodySize-medium 1.8 (menu font size, richtext heading 4)
+// (richtext heading 3)
+// bodySize-large 2
+// bodySize-xlarge 2.4 (richtext heading2)
+//  bodySize-xxlarge 2.8 (journal title, richtext heading1)
+// bodySize-xxxlarge 3.6 (site name)
+
+// FONT WEIGHT
+$fontWeight-normal: 400;
+$fontWeight-semibold: 600;
+$fontWeight-bold: 700;
+// 200 imported in googl fonts, but delete there if not used
+// 300 imported in googl fonts, but delete there if not used
+// 400 (menu font weight, journal body richtext, guest author bio)
+// 500 (date on image, tags)
+// 600 (breadcrumbs, journal author/readtime, guest author title, richtext blockquote, journal suggestion date, journal suggestion title)
+// 700 (site name, journal suggestions section heading)

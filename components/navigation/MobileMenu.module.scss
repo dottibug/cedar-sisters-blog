@@ -1,0 +1,11 @@
+// TODO background color is for dev purposes
+
+.mobileMenu {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+}

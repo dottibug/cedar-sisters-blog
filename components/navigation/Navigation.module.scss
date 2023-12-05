@@ -1,0 +1,27 @@
+@use '../../app/sass/variables';
+@use '../../app/sass/mixins' as mixins;
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  @include mixins.respond-to(tablet) {
+    //
+  }
+}
+
+.navMenu {
+  display: inline-flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navMenuLink {
+  font-size: variables.$fontBodySize-medium;
+  font-weight: variables.$fontWeight-normal;
+  text-decoration: none;
+  text-transform: uppercase;
+}

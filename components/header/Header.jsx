@@ -1,3 +1,4 @@
+'use client';
 import Navigation from '../navigation/Navigation';
 
 // use same breaks as space
@@ -10,10 +11,9 @@ const tempHeaderStyles = {
   justifyContent: 'space-between',
 };
 
-export default function Header({ children }) {
+export default function Header() {
   return (
     <header style={tempHeaderStyles}>
-      <h1>Cedar Sisters</h1>
       <Navigation />
     </header>
   );

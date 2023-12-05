@@ -1,0 +1,18 @@
+@use '../../app/sass/variables' as variables;
+
+// TODO border bottom is for dev purposes
+.mobileMenuItem {
+  border-bottom: 1px solid black;
+  height: 6rem;
+  width: 100%;
+}
+
+.mobileMenuItemLink {
+  align-items: center;
+  display: flex;
+  font-size: variables.$fontBodySize-large;
+  height: 100%;
+  padding: 0 2rem;
+  text-decoration: none;
+  width: 100%;
+}

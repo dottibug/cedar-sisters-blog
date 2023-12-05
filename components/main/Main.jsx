@@ -1,10 +1,11 @@
 'use client';
+import styles from './Main.module.scss';
 import JournalsProvider from '@/context/JournalsProvider';
 
-export default function Body({ children }) {
+export default function Main({ children }) {
   return (
-    <body>
+    <main className={styles.main}>
       <JournalsProvider>{children}</JournalsProvider>
-    </body>
+    </main>
   );
 }

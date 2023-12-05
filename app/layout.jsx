@@ -1,8 +1,7 @@
 import './base.scss';
 import { storyblokInit, apiPlugin } from '@storyblok/react/rsc';
 import StoryblokProvider from '@/context/StoryblokProvider';
-import Header from '@/components/header/Header';
-import Body from '@/components/body/Body';
+import App from '@/components/app/App';
 
 storyblokInit({
   accessToken: process.env.storyblokApiToken,
@@ -24,8 +23,7 @@ export default function RootLayout({ children }) {
         {/* <meta /> */}
         {/* <head> */}
         <body>
-          <Header />
-          <Body>{children}</Body>
+          <App>{children}</App>
         </body>
       </html>
     </StoryblokProvider>
