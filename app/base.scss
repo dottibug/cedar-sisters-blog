@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@200;400;600&display=swap');
+
+@import './sass/reset';
+@import './sass/mixins';
+
+// VARIABLES
+$fontBody: 'Inter', sans-serif;
+$fontHeading: 'Cormorant Garamond', serif;
+
+body {
+  font-family: $fontBody;
+}

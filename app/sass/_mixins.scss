@@ -1,0 +1,36 @@
+// Define breakpoint values for different screen sizes
+$mobileMax: 744px;
+$tabletMin: 745px;
+$tabletMax: 1092px;
+$laptopMin: 1093px;
+$laptopMax: 1419px;
+$desktopMin: 1420px;
+
+// This mixin generates media queries for the given screen size.
+// It accepts one parameter, $media, which should be one of 'desktop', 'laptop', 'tablet', or 'mobile'.
+// Inside the mixin, the @content directive is used to include the styles that should be applied at that breakpoint.
+// Usage:
+// @include respond-to(desktop) {
+//   // styles for desktop screens
+// }
+// @include respond-to(laptop) {
+//   // styles for laptop screens
+// }
+// @include respond-to(tablet) {
+//   // styles for tablet screens
+// }
+@mixin respond-to($media) {
+  @if $media == tablet {
+    @media (min-width: $tabletMin) {
+      @content;
+    }
+  } @else if $media == laptop {
+    @media (min-width: $laptopMin) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media (min-width: $desktopMin) {
+      @content;
+    }
+  }
+}

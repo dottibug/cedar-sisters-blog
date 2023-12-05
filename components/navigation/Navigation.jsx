@@ -13,6 +13,9 @@ const navigationLinks = ['home', 'journal', 'about', 'contact'];
 export default function Navigation() {
   const currentPathname = useCurrentNavigationPath();
 
+  // if mobile, return MobileNav
+  // if tablet and up, return TabletLaptopDesktopNav
+
   return (
     <nav>
       <ul style={tempUlStyles}>

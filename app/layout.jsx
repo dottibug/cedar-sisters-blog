@@ -1,3 +1,4 @@
+import './base.scss';
 import { storyblokInit, apiPlugin } from '@storyblok/react/rsc';
 import StoryblokProvider from '@/context/StoryblokProvider';
 import Header from '@/components/header/Header';
