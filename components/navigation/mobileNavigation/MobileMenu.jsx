@@ -7,7 +7,7 @@ import {
   OPEN_MENU,
   CLOSE_MENU,
 } from './mobileMenuAnimationVariants';
-import { navigationLinks } from './navigationLinks';
+import { navigationLinks } from '../navigationLinks';
 import MobileMenuLink from './MobileMenuLink';
 
 // TODO adjust menu animation

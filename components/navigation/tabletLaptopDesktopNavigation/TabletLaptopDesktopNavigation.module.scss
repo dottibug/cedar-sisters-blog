@@ -1,0 +1,24 @@
+@use '../../../app/sass/variables';
+@use '../sass/mixins';
+
+.navBar {
+  @include mixins.navbar;
+}
+
+.navMenu {
+  display: inline-flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navMenuItem {
+  align-items: center;
+  display: flex;
+}
+
+.navMenuLink {
+  font-size: variables.$fontBodySize-medium;
+  font-weight: variables.$fontWeight-normal;
+  text-decoration: none;
+  text-transform: uppercase;
+}

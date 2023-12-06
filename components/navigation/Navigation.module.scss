@@ -1,4 +1,3 @@
-@use '../../app/sass/variables';
 @use '../../app/sass/mixins' as mixins;
 
 .navigation {
@@ -13,15 +12,12 @@
   }
 }
 
-.navMenu {
-  display: inline-flex;
-  gap: 3rem;
-  list-style: none;
-}
-
-.navMenuLink {
-  font-size: variables.$fontBodySize-medium;
-  font-weight: variables.$fontWeight-normal;
-  text-decoration: none;
-  text-transform: uppercase;
+.navBar {
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  height: 8rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 100%;
 }

@@ -1,4 +1,6 @@
-.mobileNavBar {
+// TODO background color is for dev purposes
+
+@mixin navbar {
   background-color: gray;
   display: flex;
   flex-direction: row;
