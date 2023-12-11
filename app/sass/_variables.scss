@@ -1,3 +1,7 @@
+// COLORS
+$color-gray-dark: #232927;
+$color-accent-med-dark: #bf8d82;
+
 // FONTS
 $fontBody: 'Inter', sans-serif;
 $fontHeading: 'Cormorant Garamond', serif;
@@ -32,3 +36,10 @@ $fontWeight-bold: 700;
 // 500 (date on image, tags)
 // 600 (breadcrumbs, journal author/readtime, guest author title, richtext blockquote, journal suggestion date, journal suggestion title)
 // 700 (site name, journal suggestions section heading)
+
+// FONT COLORS
+$fontColor-main: $color-gray-dark;
+$fontColor-accent: $color-accent-med-dark;
+
+// TRANSITIONS
+$transition-main: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);

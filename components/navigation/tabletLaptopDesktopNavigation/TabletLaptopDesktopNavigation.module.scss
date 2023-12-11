@@ -17,8 +17,21 @@
 }
 
 .navMenuLink {
-  font-size: variables.$fontBodySize-medium;
+  color: variables.$fontColor-main;
+  font-size: variables.$fontBodySize-small;
   font-weight: variables.$fontWeight-normal;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.active {
+  color: variables.$fontColor-accent;
+  cursor: default;
+  text-decoration: underline from-font;
+  text-underline-offset: 0.8rem;
+}
+
+.navMenuLink:hover {
+  color: variables.$fontColor-accent;
+  transition: variables.$transition-main;
 }

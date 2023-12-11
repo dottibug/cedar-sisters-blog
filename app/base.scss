@@ -7,5 +7,6 @@
 // Fuggles google font if don't want lindsey signature
 
 body {
+  color: variables.$fontColor-main;
   font-family: variables.$fontBody;
 }
