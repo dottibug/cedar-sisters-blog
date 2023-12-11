@@ -12,9 +12,7 @@ const tempJournalSuggestionsStyle = {
 
 export default function JournalSuggestions() {
   const { postId: currentJournalId } = useJournalPostContext();
-
   const { journals } = useJournalsContext();
-
   const journalSuggestions = getJournalSuggestions(currentJournalId, journals);
 
   return (

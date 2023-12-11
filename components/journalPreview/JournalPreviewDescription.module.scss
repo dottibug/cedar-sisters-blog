@@ -1,0 +1,27 @@
+@use '../../app/sass/variables' as variables;
+
+.journalPreviewDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.journalPreviewDate {
+  color: variables.$fontColor-accent;
+  font-size: variables.$fontBodySize-xxsmall;
+  font-weight: variables.$fontWeight-semibold;
+  text-transform: uppercase;
+}
+
+.journalPreviewTitle {
+  color: variables.$fontColor-main-dark;
+  font-family: variables.$fontHeading;
+  font-size: variables.$fontBodySize-large;
+  font-weight: variables.$fontWeight-bold;
+}
+
+.journalPreviewTeaser {
+  color: variables.$fontColor-main-dark;
+  font-size: variables.$fontBodySize-small;
+}

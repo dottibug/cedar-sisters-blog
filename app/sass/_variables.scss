@@ -1,6 +1,8 @@
 // COLORS
 $color-gray-dark: #232927;
+$color-gray-light: #f1f2f2;
 $color-accent-med-dark: #bf8d82;
+$color-accent-dark: #9e7369;
 
 // FONTS
 $fontBody: 'Inter', sans-serif;
@@ -16,6 +18,9 @@ $fontBodySize-large: 2rem;
 $fontBodySize-xlarge: 2.4rem;
 $fontBodySize-xxlarge: 2.8rem;
 $fontBodySize-xxxlarge: 3.6rem;
+
+$fontHeadingSize-xlarge: 6.4rem;
+$fontHeadingSize-xxlarge: 7.2rem;
 // bodySize-xxsmall 1.2 (breadcrumbs, date on image, tags, journal suggestion date)
 // bodySize-xsmall 1.4 (journal stats, journal author/readtime, journal suggestions section heading, richtext heading6, richtext blockquote, journal suggestion title)
 // bodySize-small 1.6 (guest author title, journal body richtext, richtext heading5, guest author bio)
@@ -38,8 +43,13 @@ $fontWeight-bold: 700;
 // 700 (site name, journal suggestions section heading)
 
 // FONT COLORS
-$fontColor-main: $color-gray-dark;
-$fontColor-accent: $color-accent-med-dark;
+$fontColor-main-dark: $color-gray-dark;
+$fontColor-main-light: $color-gray-light;
+// $fontColor-accent: $color-accent-med-dark; // Original design was this one; changed to dark so it matches the journal preview dates
+$fontColor-accent: $color-accent-dark;
+
+// LETTER SPACING
+$letterSpacing-wide: 0.3rem;
 
 // TRANSITIONS
 $transition-main: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
