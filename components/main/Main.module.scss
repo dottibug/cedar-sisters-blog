@@ -1,3 +1,9 @@
+@use '../../app/sass/mixins' as mixins;
+
 .main {
   margin-top: 8rem;
+
+  @include mixins.respond-to(tablet) {
+    margin-top: 10rem;
+  }
 }
