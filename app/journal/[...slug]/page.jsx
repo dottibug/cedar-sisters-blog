@@ -9,6 +9,8 @@ export default function JournalPostPage() {
 
   if (!story.content) return <div>LOADER NEEDED...</div>;
 
+  console.log('JOURNAL POST PAGE STORY: ', story);
+
   return (
     <JournalPostProvider>
       <StoryblokComponent blok={story.content} />

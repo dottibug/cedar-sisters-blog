@@ -1,24 +1,25 @@
 'use client';
-import { useJournalsContext } from '@/context/useJournalsContext';
-import JournalPreview from '@/components/journalPreview/JournalPreview';
+import { usePathname } from 'next/navigation';
+import { StoryblokComponent, useStoryblok } from '@storyblok/react';
 import SmallHero from '@/components/hero/smallHero/SmallHero';
-import Journals from '@/components/journals/Journals';
 
-const tempUlStyle = {
-  display: 'flex',
-  listStyle: 'none',
-  gap: '2rem',
-};
+export default function JournalHomepage() {
+  const path = usePathname();
+  const story = useStoryblok(path, { version: 'draft' });
 
-export default function JournalsHomepage() {
-  const { isLoadingJournals, journals } = useJournalsContext();
+  // NOTE do we want isLoadingJournals here?
+  if (!story.content) return <div>LOADING JOURNALS...</div>;
 
-  if (isLoadingJournals) return <div>LOADING JOURNALS...</div>;
+  console.log('JOURNAL HOME STORY: ', story);
 
   return (
     <section>
-      <SmallHero />
-      <Journals />
+      {/* <SmallHero /> */}
+      {/* <Journals /> */}
+
+      {/* this goes to Journal Home component, which is the content type for /journal */}
+      {/* we want the Journal Home component to then render SmallHero and Journals */}
+      <StoryblokComponent blok={story.content} />
     </section>
   );
 }

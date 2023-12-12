@@ -1,0 +1,7 @@
+@use '../../../app/sass/variables' as variables;
+
+.heading {
+  font-family: variables.$fontHeading;
+  font-size: variables.$fontHeadingSize-xxlarge;
+  font-weight: variables.$fontWeight-normal;
+}

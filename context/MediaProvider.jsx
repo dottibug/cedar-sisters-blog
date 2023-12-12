@@ -20,7 +20,7 @@ export const DESKTOP = 'DESKTOP';
 export default function MediaProvider({ children }) {
   const [media, setMedia] = useState(MOBILE);
 
-  console.log('media provider media stat: ', media);
+  // console.log('media provider media stat: ', media);
 
   // Get initial media size
   useEffect(() => {

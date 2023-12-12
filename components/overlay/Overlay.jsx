@@ -1,6 +1,6 @@
 import styles from './Overlay.module.scss';
 
-export default function Overlay({ color = '#000000', opacity = 50, gradient }) {
+export default function Overlay({ color = '#000000', opacity = 30, gradient }) {
   const getOverlayStyle = () => {
     if (!gradient)
       return {

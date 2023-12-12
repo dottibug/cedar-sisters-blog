@@ -1,0 +1,8 @@
+@use '../../../app/sass/variables' as variables;
+
+.preheading {
+  font-size: variables.$fontBodySize-medium;
+  font-weight: variables.$fontWeight-semibold;
+  letter-spacing: variables.$letterSpacing-wide;
+  text-transform: uppercase;
+}

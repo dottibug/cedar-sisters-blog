@@ -16,16 +16,3 @@
   top: 55%;
   transform: translate(-50%, -50%);
 }
-
-.preheading {
-  font-size: variables.$fontBodySize-medium;
-  font-weight: variables.$fontWeight-semibold;
-  letter-spacing: variables.$letterSpacing-wide;
-  text-transform: uppercase;
-}
-
-.heading {
-  font-family: variables.$fontHeading;
-  font-size: variables.$fontHeadingSize-xxlarge;
-  font-weight: variables.$fontWeight-normal;
-}

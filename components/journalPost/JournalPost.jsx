@@ -8,6 +8,7 @@ import JournalPostStats from './journalPostStats/JournalPostStats';
 import Tags from '../tags/Tags';
 import PrevNextJournals from './prevNextJournals/PrevNextJournals';
 import JournalSuggestions from './journalSuggestions/JournalSuggestions';
+import { getStoryblokBodyComponents } from '@/helpers/getStoryblokBodyComponents';
 
 const tempAuthReadStyle = {
   display: 'inline-flex',
@@ -23,10 +24,7 @@ export default function JournalPost({ blok }) {
   const { body, journalEditor } = blok;
   const journalEditorBlok = journalEditor?.[0] || {};
 
-  const bodyComponents = body.reduce((acc, blok) => {
-    acc[blok.component] = blok;
-    return acc;
-  }, {});
+  const bodyComponents = getStoryblokBodyComponents(body);
 
   const journalTitleBlok = bodyComponents['journalTitle'];
   const journalAuthorBlok = bodyComponents['journalAuthor'];
